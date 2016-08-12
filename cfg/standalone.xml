@@ -7,7 +7,7 @@
         <extension module="org.jboss.as.deployment-scanner"/>
         <extension module="org.jboss.as.ee"/>
         <extension module="org.jboss.as.ejb3"/>
-        <extension module="org.jboss.as.jacorb"/>
+        <!--  --><extension module="org.jboss.as.jacorb"/>-->
         <extension module="org.jboss.as.jaxrs"/>
         <extension module="org.jboss.as.jdr"/>
         <extension module="org.jboss.as.jmx"/>
@@ -274,11 +274,11 @@ ${mysql.enabled}" use-java-context="true" pool-name="MySQLDS" use-ccm="true">
                 </local-cache>
             </cache-container>
         </subsystem>
-        <subsystem xmlns="urn:jboss:domain:jacorb:1.3">
+        <!-- <subsystem xmlns="urn:jboss:domain:jacorb:1.3">
             <orb socket-binding="jacorb" ssl-socket-binding="jacorb-ssl">
                 <initializers transactions="spec" security="identity"/>
             </orb>
-        </subsystem>
+        </subsystem> -->
         <subsystem xmlns="urn:jboss:domain:jaxrs:1.0"/>
         <subsystem xmlns="urn:jboss:domain:jca:2.0">
             <archive-validation enabled="true" fail-on-error="true" fail-on-warn="false"/>
